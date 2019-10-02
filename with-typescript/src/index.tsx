@@ -10,7 +10,9 @@ import Query from './components/Query';
  * Unlike redux, you don't want to connect your components until they are ready to be used
  * Unless they will share the same parameters that are passed into connect() each time
  */
-const HelloComponent = connect({ instance: 'Hello', getQueryAsString: true })(Query(Hello));
+const HelloComponent = connect({ instance: "Hello", getQueryAsString: true })(
+  Query(Hello)
+);
 
 const App = () => (
   <Provider client={oriql}>
