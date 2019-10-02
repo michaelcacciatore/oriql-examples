@@ -4,6 +4,7 @@
 declare module 'react-oriql' {
   interface ConnectOptions {
     instance: string
+    getQueryAsString: boolean
   }
   export function Provider(context: any, children: Element): any
   export function connect(options?: ConnectOptions): (component: any) => any
