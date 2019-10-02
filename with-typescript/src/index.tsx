@@ -1,9 +1,18 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider, connect } from 'react-oriql';
 
-import Hello from "./components/Hello";
+import Hello from './components/Hello';
+
+const HelloComponent = connect()(Hello);
+
+const App = () => (
+  <Provider>
+    <HelloComponent compiler="Oriql" framework="React" />
+  </Provider>
+)
 
 ReactDOM.render(
-    <Hello compiler="Oriql" framework="React" />,
-    document.getElementById("example")
+  <App />,
+  document.getElementById("example")
 );

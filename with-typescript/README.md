@@ -1,0 +1,1 @@
+Compile the code using `npm run build` and open the `index.html` file in your favorite web browser.
