@@ -4,7 +4,7 @@ import { connect, Provider as OriqlProvider } from 'react-oriql';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
-//import Hello from './components/Hello';
+import Hello from './components/Hello';
 import queries from './queries';
 
 const client = new ApolloClient({
@@ -21,15 +21,15 @@ const Provider = ({ children }) => (
  * Unlike redux, you don't want to connect your components until they are ready to be used
  * Unless they will share the same parameters that are passed into connect() each time
  */
-//const HelloComponent = connect({ instance: 'Hello' })(Hello);
+const HelloComponent = connect({ instance: 'Hello' })(Hello);
 
 /**
  * If you wish to use the "advanced" connectToApollo wrapper, uncomment out these lines and comment out lines 7 and 24
  */
-import Hello from './advanced/components/Hello';
-import connectToApollo from './advanced/connectToApollo';
+// import Hello from './advanced/components/Hello';
+// import connectToApollo from './advanced/connectToApollo';
 
-const HelloComponent = connectToApollo({instance: 'Hello'})(Hello)
+// const HelloComponent = connectToApollo({instance: 'Hello'})(Hello)
 
 const App = () => (
   <Provider>
