@@ -21,7 +21,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-oriql": "0.1.0-alpha.1",
+    "react-oriql": "^0.1.0-alpha.1",
     "use-async-effect": "2.2.1"
   }
 }

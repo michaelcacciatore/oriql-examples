@@ -15,7 +15,7 @@
     "graphql": "^14.5.8",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-oriql": "0.0.1"
+    "react-oriql": "^0.1.0-alpha.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
