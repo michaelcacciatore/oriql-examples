@@ -1,0 +1,1 @@
+Compile the code using `npm run dev` and open the `http://localhost:8080` file in your favorite web browser (if it doesn't open automaticaly).
