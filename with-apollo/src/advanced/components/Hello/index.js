@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Hello = ({ compiler, framework }) => (
   <h1>
     Hello from {compiler} and {framework}!
